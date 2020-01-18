@@ -1,0 +1,23 @@
+Author: David Brungardt
+Date: 1/18/2020
+Program: MergeSort.go
+
+This program was an opportunity for me to get more practice with the Go programming language, as well as a chance to learn a new algorithm.
+MergeSort has a time complexity of O(nlog(n))
+
+If we use 8 as an example for the input size n, we can see the time complexity a little more clearly.
+
+                                         8
+                                    4        4
+                                  2   2    2   2
+                                 1 1 1 1  1 1 1 1
+
+As we split each list into a smaller list, can see that we are able to break down 8 into 3 layers as we attempt to reach our base case: 1
+
+log2(8) = 3, which is equal to the layers required to split the original list enough times reach our base case.
+
+For each layer (log(n)), we will need to compare each item in the list so we can sort the items as the lists merge, which accounts for the n in nlog(n).
+
+Merging these algorithms required a "while-loop" functionality, still have to get used to the fact that GO only supports very flexible for-loops.
+
+Still wrapping my head around O(n) notation, and logarithmic time complexity; and this explanation is far from detailed, but this was definitely a fun learning exercise!

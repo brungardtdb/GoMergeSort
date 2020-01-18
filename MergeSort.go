@@ -132,4 +132,5 @@ func merge(firstParam []int, secondParam []int) []int {
 
 	// return sorted slice
 	return outSlice
-}
+
+} // end of merge method

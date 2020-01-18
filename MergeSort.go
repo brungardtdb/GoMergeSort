@@ -33,23 +33,13 @@ func mergeSort(param []int) []int {
 	} else {
 
 		// pass slice into sort method
-		outSlice := sort(inputSlice)
+		outSlice := split(inputSlice)
 
 		// return sorted slice
 		return outSlice
 	}
 
 } // end of mergeSort method
-
-func sort(param []int) []int {
-
-	// assign parameter to inputSlice
-	inputSlice := param
-	// output result of split method
-	outSlice := split(inputSlice)
-	return outSlice
-
-} // end of sort method
 
 func split(param []int) []int {
 
